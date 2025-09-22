@@ -379,7 +379,25 @@ header {
   -ms-transform: translateY(0);
   transform: translateY(0);
 }
+/* miagregado */
+.featured-item a {
+  position: relative;
+  z-index: 2; /* encima del ::after */
+  display: block;
+}
 
+.featured-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.featured-item a img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; recorta y ajusta la imagen sin deformarla */
+  object-fit: cover;
+  display: block; /* quita espacios extra */
+}
 /* services */
 #services {
   background: -webkit-gradient(
@@ -912,27 +930,44 @@ header.header-sm {
   background-color: #fff;
   border-color: #fff;
 }
-body.dark-mode .navbar-cng{
-    background-color: var(--dark);
+body.dark-mode .navbar-cng {
+  background-color: var(--dark);
 }
-body.dark-mode,body.dark-mode #testimonials,body.dark-mode #blog{
-background-color: var(--dark);
+body.dark-mode,
+body.dark-mode #testimonials,
+body.dark-mode #blog {
+  background-color: var(--dark);
 }
-body.dark-mode .text,body.dark-mode .navbar-cng .site-brand,body.dark-mode .navbar-cng .nav-link,body.dark-mode .navbar-cng,body.dark-mode .lg-title,body.dark-mode .test-item-info h3,body.dark-mode .test-item-info p,body.dark-mode .footer-item p,body.dark-mode .facts-item p,body.dark-mode .about-right .text,body.dark-mode .about-right h2,body.dark-mode .contact-item > div span,body.dark-mode .contact-item .text,body.dark-mode .blog-item-bottom span ,body.dark-mode .blog-item-bottom a{
-    color: #fff;
+body.dark-mode .text,
+body.dark-mode .navbar-cng .site-brand,
+body.dark-mode .navbar-cng .nav-link,
+body.dark-mode .navbar-cng,
+body.dark-mode .lg-title,
+body.dark-mode .test-item-info h3,
+body.dark-mode .test-item-info p,
+body.dark-mode .footer-item p,
+body.dark-mode .facts-item p,
+body.dark-mode .about-right .text,
+body.dark-mode .about-right h2,
+body.dark-mode .contact-item > div span,
+body.dark-mode .contact-item .text,
+body.dark-mode .blog-item-bottom span,
+body.dark-mode .blog-item-bottom a {
+  color: #fff;
 }
-body.dark-mode .contact-form .form-control{
-border-color: #fff;
+body.dark-mode .contact-form .form-control {
+  border-color: #fff;
 }
-body.dark-mode .blog-item ,body.dark-mode .test-item{
-    background-color: #161919;
+body.dark-mode .blog-item,
+body.dark-mode .test-item {
+  background-color: #161919;
 }
-body.dark-mode #theme-toggle-btn{
-    background-color: #fff;
+body.dark-mode #theme-toggle-btn {
+  background-color: #fff;
 }
-body.dark-mode #theme-toggle-btn::after{
-    background-color: var(--dark)
+body.dark-mode #theme-toggle-btn::after {
+  background-color: var(--dark);
 }
-body.dark-mode .popular-item .text{
-    color: #000;
+body.dark-mode .popular-item .text {
+  color: #000;
 }
