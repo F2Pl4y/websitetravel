@@ -731,12 +731,22 @@ header.header-sm {
   position: absolute;
   color: #fff;
   z-index: 2;
+  /* bottom: -100%; */
   bottom: -100%;
+
   width: 100%;
-  padding: 2rem;
+  /* padding: 2rem; */
+  padding: 1rem 1.2rem;
   -webkit-transition: var(--trans);
   -o-transition: var(--trans);
   transition: var(--trans);
+
+  /* Ajustes para el texto */
+  word-break: break-word; /* fuerza salto de palabra si es muy larga */
+  overflow-wrap: break-word;
+  white-space: normal; /* permite varias líneas */
+  max-height: 60%; /* que no tape toda la imagen */
+  overflow-y: auto; /* scroll si es demasiado largo */
 }
 .popular-item .rating {
   -webkit-box-pack: start;
