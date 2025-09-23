@@ -111,3 +111,69 @@ div a img {
   object-fit: cover; /* hace que la imagen se recorte y quede pareja */
   display: block;
 }
+
+/* 2. Estilo para la "píldora" de duración */
+.tour-duration {
+  display: inline-flex; /* Asegura que el ícono y el texto estén bien alineados */
+  align-items: center;
+  gap: 0.5rem; /* Espacio entre el ícono y el texto */
+
+  background-color: #f0f3f5; /* Un color de fondo suave */
+  color: #5a6d7d; /* Un color de texto gris azulado */
+  font-size: 1rem; /* Tamaño de letra (ajústalo si es necesario) */
+  font-weight: 500;
+
+  padding: 0.5rem 1rem; /* Relleno interno */
+  border-radius: 25px; /* Bordes completamente redondeados */
+  margin-top: 5px; /* Pequeño margen para alinear mejor con el título */
+}
+
+/* Clase para listas con viñetas y descripciones alineadas */
+.lista-descripcion li {
+  display: flex; /* ¡La magia está aquí! Convierte el <li> en un contenedor flexible. */
+  align-items: flex-start; /* Alinea el ícono y el texto en la parte superior. */
+  margin-bottom: 1rem; /* Añade espacio vertical entre cada punto de la lista. */
+}
+
+.lista-descripcion li i {
+  margin-right: 0.75rem; /* Crea el espacio entre el ícono y el texto. */
+  margin-top: 4px; /* Ajuste vertical fino para que el ícono se alinee mejor con el texto. */
+  color: #28a745; /* Opcional: Un color verde para el ícono de check. */
+}
+
+.posi {
+  color: #28a745;
+}
+.contra {
+  color: #d90b0b;
+}
+
+/* --- Estilos para la tabla de Incluye / No Incluye --- */
+
+/* 1. Estilos para la CELDA (<td>). Quitamos flexbox de aquí. */
+.tabla-inclusion tbody td {
+  text-align: justify;
+  vertical-align: top; /* Mantiene el contenido alineado arriba */
+}
+
+/* 2. AÑADIMOS la alineación flexbox a la nueva 'caja' interna */
+.tabla-inclusion .contenido-celda {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* 3. El estilo del ícono ahora se aplica dentro de la 'caja' */
+.tabla-inclusion .contenido-celda i {
+  margin-right: 0.75rem; /* Espacio entre el ícono y el texto */
+  margin-top: 5px; /* Ajuste vertical */
+  min-width: 16px;
+}
+
+/* 4. Los colores de los íconos se mantienen igual */
+.tabla-inclusion i.fa-check {
+  color: #28a745; /* Verde */
+}
+
+.tabla-inclusion i.fa-xmark {
+  color: #dc3545; /* Rojo */
+}
