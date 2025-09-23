@@ -16,6 +16,7 @@
     <!-- custom css -->
     <link rel="stylesheet" href="../css/utility.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos 2.css">
     <link rel="stylesheet" href="../css/responsive.css">
 </head>
 
@@ -36,7 +37,7 @@
                 </button>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Inicio</a>
+                        <a href="../index.html" class="nav-link">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a href="gallery.html" class="nav-link">Lugares</a>
@@ -80,15 +81,70 @@
 
             <div class="about-row">
                 <div class="about-left my-2">
-                    <img src="../images/about-img.jpg" alt="about img">
+                    <!-- <img src="../images/about-img.jpg" alt="about img"> -->
+                    <div class="slider">
+                        <div class="slides">
+                            <div class="slide active">
+                                <img src="../images/pasion.png" alt="Foto 1">
+                            </div>
+                            <div class="slide">
+                                <img src="../images/compromiso.png" alt="Foto 2">
+                            </div>
+                            <div class="slide">
+                                <img src="../images/hospitalidad.png" alt="Foto 3">
+                            </div>
+                            <div class="slide">
+                                <img src="../images/innovacion.png" alt="Foto 2">
+                            </div>
+                            <div class="slide">
+                                <img src="../images/responsabilidad.png" alt="Foto 3">
+                            </div>
+                        </div>
+
+                        <!-- Flechas -->
+                        <button class="prev">&#10094;</button>
+                        <button class="next">&#10095;</button>
+
+                        <!-- Indicadores -->
+                        <div class="dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
                 </div>
                 <div class="about-right">
-                    <h2>Pasión por mostrar lo mejor de nuestro destino</h2>
-                    <p class="text">GMTOURS nació con el sueño de compartir las maravillas de nuestra tierra con cada viajero que llega hasta aquí.
-                        Llevamos años organizando experiencias auténticas, combinando naturaleza, cultura, aventura y hospitalidad.</p>
-                    <p class="text">Nuestro equipo está formado por guías locales y apasionados del turismo, comprometidos en brindar seguridad, comodidad
-                        y experiencias memorables. Cada recorrido está diseñado para que descubras no solo los paisajes, sino también las historias,
-                        sabores y tradiciones que nos hacen únicos.</p>
+                    <!-- <h2>Pasión por mostrar lo mejor de nuestro destino</h2> -->
+                    <p class="text">GMBTours nace de la pasión y experiencia de Guadalupe Mendoza Berrocal, profesional con más de 20 años en el ámbito turístico. A lo largo de su trayectoria ha guiado y acompañado a viajeros nacionales e internacionales, transmitiendo no solo conocimientos sobre la historia y cultura del Perú, sino también calidez, confianza y compromiso.
+                        El propósito de GMBTours es dar a conocer la riqueza de la región de Ica y, en especial, el legado milenario de Nasca, a través de experiencias culturales, arqueológicas y de aventura que conecten al visitante con la esencia auténtica de nuestro territorio.
+                        Con una filosofía de turismo responsable y sostenible, trabajamos para que cada recorrido sea más que un viaje: sea un recuerdo inolvidable y un aporte positivo a la comunidad local.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pilares" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">Nuestra filosofía</span>
+                <h2 class="lg-title">Nuestros Pilares</h2>
+            </div>
+
+            <div class="pilares-row">
+                <div class="pilar-col">
+                    <h3>Nuestra Misión</h3>
+                    <p class="text">
+                        Ofrecer experiencias turísticas auténticas y personalizadas en la región de Ica, conectando a nuestros viajeros con la riqueza cultural, histórica y natural de Nasca. Nos comprometemos a un servicio de alta calidad, seguro y responsable, que supere las expectativas y genere un impacto positivo en la comunidad local.
+                    </p>
+                </div>
+                <div class="pilar-col">
+                    <h3>Nuestra Visión</h3>
+                    <p class="text">
+                        Ser la agencia de turismo líder y referente en la región de Ica, reconocida por nuestra innovación, sostenibilidad y la capacidad de crear viajes inolvidables que revelen la verdadera esencia del Perú, convirtiendo a cada visitante en un embajador de nuestro legado.
+                    </p>
                 </div>
             </div>
         </div>
@@ -206,9 +262,7 @@
 
     <!-- js -->
     <script src="../js/script.js"></script>
-    <script>
-
-    </script>
+    <script src="../js/script 2.js"></script>
 </body>
 
 </html>
