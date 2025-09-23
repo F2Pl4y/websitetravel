@@ -193,8 +193,6 @@ td {
 
 /* Estilo base (por defecto) para pantallas horizontales (desktop) */
 header.tour-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../images/tr-nazca2.jpg) center/cover no-repeat;
   min-height: 10vh; /* Altura relativa al ALTO de la pantalla */
 }
 
