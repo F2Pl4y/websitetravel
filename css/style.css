@@ -981,3 +981,73 @@ body.dark-mode #theme-toggle-btn::after {
 body.dark-mode .popular-item .text {
   color: #000;
 }
+
+/* para tablas */
+/* Contenedor responsive (scroll horizontal en pantallas pequeñas) */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Estilo base de la tabla */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  color: #212529;
+  background-color: transparent;
+}
+
+/* Bordes y padding */
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: middle;
+  border: 1px solid #dee2e6;
+}
+
+/* Encabezado */
+.table thead th {
+  font-weight: bold;
+  background-color: #f8f9fa;
+}
+
+/* Estilo rayado (striped) */
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Centrar contenido */
+.text-center {
+  text-align: center;
+}
+
+/* Opcional: efecto hover */
+.table tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #20b857;
+  color: #fff;
+}

@@ -8,7 +8,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- font awesome cdn -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- fonts -->
     <link rel="stylesheet" href="font/fonts.css">
     <!-- normalize css -->
@@ -342,19 +343,24 @@
     <!-- end of footer -->
 
     <!-- js -->
-    <script src="js/script.js"></script>
-    <script>
-        // play/pause video
-        let video = document.querySelector('.video-wrapper video');
-        document.getElementById('play-btn').addEventListener('click', () => {
-            if (video.paused) {
-                video.play();
-            } else {
-                video.pause();
-            }
-        });
-    </script>
-    <script src="https://kit.fontawesome.com/b837442c39.js" crossorigin="anonymous"></script>
+
+    <a href="https://wa.me/51984312581" class="whatsapp-float" target="_blank" rel="noopener">
+        <i class="fa-brands fa-square-whatsapp"></i>
+    </a>
+
 </body>
+<script src="js/script.js"></script>
+<script>
+    // play/pause video
+    let video = document.querySelector('.video-wrapper video');
+    document.getElementById('play-btn').addEventListener('click', () => {
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    });
+</script>
+<script src="https://kit.fontawesome.com/b837442c39.js" crossorigin="anonymous"></script>
 
 </html>
