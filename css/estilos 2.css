@@ -177,3 +177,14 @@ div a img {
 .tabla-inclusion i.fa-xmark {
   color: #dc3545; /* Rojo */
 }
+
+.snbordered th,
+td {
+  border: none !important;
+  box-shadow: none !important; /* Por si acaso hay alguna sombra */
+}
+
+.snbordered tbody tr,
+.snbordered tbody tr:nth-of-type(odd) {
+  background-color: transparent !important;
+}
