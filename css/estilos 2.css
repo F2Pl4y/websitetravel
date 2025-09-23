@@ -188,3 +188,19 @@ td {
 .snbordered tbody tr:nth-of-type(odd) {
   background-color: transparent !important;
 }
+
+/* --- Estilos para el Header de las páginas de Tour --- */
+
+/* Estilo base (por defecto) para pantallas horizontales (desktop) */
+header.tour-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/tr-nazca2.jpg) center/cover no-repeat;
+  min-height: 10vh; /* Altura relativa al ALTO de la pantalla */
+}
+
+/* REGLA CONDICIONAL: Esto se aplicará SOLO si la pantalla es vertical (ej. un celular) */
+@media (orientation: portrait) {
+  .tour-header {
+    min-height: 50vw; /* Altura relativa al ANCHO de la pantalla */
+  }
+}
