@@ -1,7 +1,7 @@
 :root {
-  --green: #d3f419;
+  --green: #fec903;
   --light-grey: #f7f7f7;
-  --dark: #0e1010;
+  --dark: #111212;
   --trans: all 0.3s ease-in-out;
 }
 .navbar {
