@@ -223,3 +223,27 @@ header.tour-header {
 .blog-item:hover .blog-item-top img {
   transform: scale(1.1);
 }
+
+/* --- Estilos para unificar el tamaño de las imágenes del slider 'Nosotros' --- */
+
+/* 1. Establecer una altura fija para el contenedor del slider */
+#about .slider {
+  height: 450px; /* 🔹 Altura para escritorio. ¡Puedes ajustar este valor! */
+  border-radius: 12px; /* Aseguramos que el contenedor también tenga bordes redondeados */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que se salga */
+  background-color: #e9ecef; /* Un color de fondo suave por si una imagen tarda en cargar */
+}
+
+/* 2. Hacer que la imagen llene el espacio de su slide sin deformarse */
+#about .slider .slide img {
+  width: 100%;
+  height: 100%; /* La imagen ocupará el 100% de la altura de su contenedor */
+  object-fit: cover; /* 🪄 Recorta la imagen para llenar el espacio, manteniendo la proporción */
+}
+
+/* 3. Ajuste para pantallas de celular (responsive) */
+@media (max-width: 768px) {
+  #about .slider {
+    height: 300px; /* 🔹 Una altura más apropiada para móviles. ¡También la puedes ajustar! */
+  }
+}
