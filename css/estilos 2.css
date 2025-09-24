@@ -202,3 +202,24 @@ header.tour-header {
     min-height: 50vw; /* Altura relativa al ANCHO de la pantalla */
   }
 }
+
+/* --- Estilos para unificar el tamaño de las imágenes de los tours --- */
+
+/* 1. Establece una altura fija para el contenedor de la imagen */
+.blog-item-top {
+  height: 220px; /* 🔹 ¡Puedes ajustar este valor! Prueba con 200px, 250px, etc. */
+  overflow: hidden; /* Se asegura que la imagen no se salga de su caja */
+}
+
+/* 2. Haz que la imagen llene ese contenedor sin deformarse */
+.blog-item-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 🪄 La magia está aquí: recorta la imagen para que llene el espacio sin estirarse */
+  transition: transform 0.3s ease; /* Añade una transición suave para el efecto hover */
+}
+
+/* 3. (Opcional) Un efecto de zoom sutil al pasar el mouse */
+.blog-item:hover .blog-item-top img {
+  transform: scale(1.1);
+}
