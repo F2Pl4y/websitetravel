@@ -52,3 +52,19 @@ button.addEventListener("click", () => {
 
 
 
+
+// // --- Control del Video de la Página de Inicio ---
+// const video = document.querySelector('#video .video-wrapper video');
+// const playBtn = document.getElementById('play-btn');
+
+// if (playBtn) { // Verificamos que el botón exista en la página actual
+//   playBtn.addEventListener('click', () => {
+//     if (video.paused) {
+//       video.play();
+//       playBtn.innerHTML = '<i class="fas fa-pause"></i>'; // Cambia el ícono a pausa
+//     } else {
+//       video.pause();
+//       playBtn.innerHTML = '<i class="fas fa-play"></i>'; // Cambia el ícono a play
+//     }
+//   });
+// }

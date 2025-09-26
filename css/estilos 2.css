@@ -1,8 +1,4 @@
-/* =======================================================
-   ESTILOS 2.CSS - Componentes personalizados y overrides
-   ======================================================= */
-
-/* --- Componente: Slider (Base) --- */
+/* ===== SLIDER BASE ===== */
 .slider {
   position: relative;
   max-width: 900px;
@@ -11,44 +7,60 @@
   border-radius: 12px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
+
 .slides {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
+
 .slide {
   min-width: 100%;
+  transition: opacity 1s ease-in-out;
 }
+
+.slide img {
+  width: 100%;
+  max-height: 50vh; /* ajusta la altura como quieras */
+  object-fit: cover; /* recorta manteniendo proporción */
+  display: block;
+}
+
+/* ===== FLECHAS ===== */
 .prev,
 .next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.5);
+  border: none;
   padding: 12px;
   cursor: pointer;
   color: white;
   font-size: 24px;
   border-radius: 50%;
   z-index: 10;
-  transition: var(--trans);
-  border: none;
 }
+
 .prev {
   left: 10px;
 }
 .next {
   right: 10px;
 }
+
 .prev:hover,
 .next:hover {
   background: rgba(0, 0, 0, 0.8);
 }
+
+/* ===== INDICADORES ===== */
 .dots {
   text-align: center;
   position: absolute;
   bottom: 15px;
   width: 100%;
 }
+
 .dot {
   height: 12px;
   width: 12px;
@@ -58,160 +70,188 @@
   display: inline-block;
   cursor: pointer;
 }
+
 .dot.active {
   background: #fff;
 }
 
-/* --- Slider Específico: Página "Nosotros" --- */
-#about .slider {
-  max-width: 100%;
-  height: 450px;
-  background-color: #e9ecef;
+/* cotizar */
+.btn-cotizar {
+  background: #28a745; /* verde tipo WhatsApp */
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
-#about .slider .slide img {
+
+.btn-cotizar:hover {
+  background: #218838; /* verde más oscuro */
+}
+
+div a img {
+  max-height: 400px;
+  width: auto; /* para que no se deforme */
+  display: block; /* elimina espacio fantasma debajo de img */
+  object-fit: cover; /* recorta si la img es más alta */
+}
+.featured-item a {
+  display: block;
+  width: 100%;
+  height: 250px; /* 🔹 puedes ajustar a 200px, 300px según lo que prefieras */
+  overflow: hidden; /* asegura que nada se desborde */
+}
+
+.featured-item a img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  max-height: none;
+  object-fit: cover; /* hace que la imagen se recorte y quede pareja */
+  display: block;
 }
 
-/* --- Slider Específico: Sección "Pilares" --- */
-#pilares .slider .prev,
-#pilares .slider .next {
-  display: none;
-}
-
-/* --- Componente: Píldora de Duración de Tour --- */
+/* 2. Estilo para la "píldora" de duración */
 .tour-duration {
-  display: inline-flex;
+  display: inline-flex; /* Asegura que el ícono y el texto estén bien alineados */
   align-items: center;
-  gap: 0.5rem;
-  background-color: #f0f3f5;
-  color: #5a6d7d;
-  font-size: 1rem;
+  gap: 0.5rem; /* Espacio entre el ícono y el texto */
+
+  background-color: #f0f3f5; /* Un color de fondo suave */
+  color: #5a6d7d; /* Un color de texto gris azulado */
+  font-size: 1rem; /* Tamaño de letra (ajústalo si es necesario) */
   font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  margin-top: 5px;
+
+  padding: 0.5rem 1rem; /* Relleno interno */
+  border-radius: 25px; /* Bordes completamente redondeados */
+  margin-top: 5px; /* Pequeño margen para alinear mejor con el título */
 }
 
-/* --- Componente: Lista de Descripción con Íconos --- */
+/* Clase para listas con viñetas y descripciones alineadas */
 .lista-descripcion li {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 1rem;
-}
-.lista-descripcion li i {
-  margin-right: 0.75rem;
-  margin-top: 4px;
-  color: var(--green); /* Color por defecto */
+  display: flex; /* ¡La magia está aquí! Convierte el <li> en un contenedor flexible. */
+  align-items: flex-start; /* Alinea el ícono y el texto en la parte superior. */
+  margin-bottom: 1rem; /* Añade espacio vertical entre cada punto de la lista. */
 }
 
-/* --- Componente: Tabla de Inclusión/Exclusión --- */
-.tabla-inclusion {
-  border: none;
+.lista-descripcion li i {
+  margin-right: 0.75rem; /* Crea el espacio entre el ícono y el texto. */
+  margin-top: 4px; /* Ajuste vertical fino para que el ícono se alinee mejor con el texto. */
+  color: #28a745; /* Opcional: Un color verde para el ícono de check. */
 }
-.tabla-inclusion th,
-.tabla-inclusion td {
-  border: none;
-  padding: 0.5rem 0.75rem; /* Padding reducido para más elegancia */
+
+.posi {
+  color: #28a745;
 }
-.tabla-inclusion tbody tr {
-  background-color: transparent !important; /* Anula el striped */
+.contra {
+  color: #d90b0b;
 }
+
+/* --- Estilos para la tabla de Incluye / No Incluye --- */
+
+/* 1. Estilos para la CELDA (<td>). Quitamos flexbox de aquí. */
 .tabla-inclusion tbody td {
   text-align: justify;
-  vertical-align: top;
+  vertical-align: top; /* Mantiene el contenido alineado arriba */
 }
+
+/* 2. AÑADIMOS la alineación flexbox a la nueva 'caja' interna */
 .tabla-inclusion .contenido-celda {
   display: flex;
   align-items: flex-start;
 }
+
+/* 3. El estilo del ícono ahora se aplica dentro de la 'caja' */
 .tabla-inclusion .contenido-celda i {
-  margin-right: 0.75rem;
-  margin-top: 5px;
+  margin-right: 0.75rem; /* Espacio entre el ícono y el texto */
+  margin-top: 5px; /* Ajuste vertical */
   min-width: 16px;
 }
+
+/* 4. Los colores de los íconos se mantienen igual */
 .tabla-inclusion i.fa-check {
-  color: #28a745;
+  color: #28a745; /* Verde */
 }
+
 .tabla-inclusion i.fa-xmark {
-  color: #dc3545;
+  color: #dc3545; /* Rojo */
 }
 
-/* --- Componente: Botón Flotante de WhatsApp --- */
-.whatsapp-float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 32px;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--trans);
-}
-.whatsapp-float:hover {
-  background-color: #20b857;
+.snbordered th,
+td {
+  border: none !important;
+  box-shadow: none !important; /* Por si acaso hay alguna sombra */
 }
 
-/* --- Dark Mode --- */
-#theme-toggle-btn {
-  position: relative;
-  cursor: pointer;
-  appearance: none;
-  width: 70px;
-  height: 32px;
-  background-color: var(--dark);
-  border: 3px solid var(--dark);
-  border-radius: 20px;
-  outline: none;
-  transition: var(--trans);
+.snbordered tbody tr,
+.snbordered tbody tr:nth-of-type(odd) {
+  background-color: transparent !important;
 }
-#theme-toggle-btn::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  height: 26px;
-  width: 26px;
-  border-radius: 50%;
-  background-color: #fff;
+
+/* --- Estilos para el Header de las páginas de Tour --- */
+
+/* Estilo base (por defecto) para pantallas horizontales (desktop) */
+header.tour-header {
+  min-height: 10vh; /* Altura relativa al ALTO de la pantalla */
 }
-#theme-toggle-btn:checked {
-  background-color: #fff;
-  border-color: #fff;
+
+/* REGLA CONDICIONAL: Esto se aplicará SOLO si la pantalla es vertical (ej. un celular) */
+@media (orientation: portrait) {
+  .tour-header {
+    min-height: 50vw; /* Altura relativa al ANCHO de la pantalla */
+  }
 }
-#theme-toggle-btn:checked::after {
-  right: 0;
-  left: auto;
-  background-color: var(--dark);
+
+/* --- Estilos para unificar el tamaño de las imágenes de los tours --- */
+
+/* 1. Establece una altura fija para el contenedor de la imagen */
+.blog-item-top {
+  height: 220px; /* 🔹 ¡Puedes ajustar este valor! Prueba con 200px, 250px, etc. */
+  overflow: hidden; /* Se asegura que la imagen no se salga de su caja */
 }
-body.dark-mode {
-  background-color: var(--dark);
-  color: #fff;
+
+/* 2. Haz que la imagen llene ese contenedor sin deformarse */
+.blog-item-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 🪄 La magia está aquí: recorta la imagen para que llene el espacio sin estirarse */
+  transition: transform 0.3s ease; /* Añade una transición suave para el efecto hover */
 }
-body.dark-mode .navbar-cng,
-body.dark-mode #blog {
-  background-color: var(--dark);
+
+/* 3. (Opcional) Un efecto de zoom sutil al pasar el mouse */
+.blog-item:hover .blog-item-top img {
+  transform: scale(1.1);
 }
-body.dark-mode .text,
-body.dark-mode .navbar-cng .site-brand,
-body.dark-mode .navbar-cng .nav-link,
-body.dark-mode .lg-title,
-body.dark-mode .about-right h2,
-body.dark-mode .blog-item-bottom span,
-body.dark-mode .blog-item-bottom a {
-  color: #fff;
+
+/* --- Estilos para unificar el tamaño de las imágenes del slider 'Nosotros' --- */
+
+/* 1. Establece una altura fija y ancho completo para el contenedor del slider */
+#about .slider {
+  max-width: 100%; /* Asegura que ocupe toda la columna */
+  height: 450px; /* 🔹 Altura para escritorio. ¡Puedes ajustar este valor! */
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #e9ecef; /* Un color de fondo por si una imagen tarda en cargar */
 }
-body.dark-mode .blog-item {
-  background-color: #161919;
+
+/* 2. Haz que CADA imagen llene el espacio de su slide sin deformarse */
+#about .slider .slide img {
+  width: 100%;
+  height: 100%; /* La imagen ocupará el 100% de la altura FIJA de su contenedor */
+  object-fit: cover; /* 🪄 La magia: recorta la imagen para llenar el espacio, manteniendo la proporción */
+  max-height: none; /* Anula cualquier regla de max-height anterior */
+}
+
+/* 3. Ajuste para pantallas de celular (responsive) */
+@media (max-width: 768px) {
+  #about .slider {
+    height: 300px; /* 🔹 Una altura más apropiada para móviles. ¡También la puedes ajustar! */
+  }
+}
+
+.logo-altura {
+  height: auto;
+  width: 170px;
+  max-height: 100px;
 }
