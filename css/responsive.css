@@ -148,7 +148,7 @@
   }
   /* change on scroll */
   .navbar-cng .navbar-nav .nav-link {
-    color: var(--dark);
+    color: var(--green);
   }
 
   .test-row,

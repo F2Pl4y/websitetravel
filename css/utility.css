@@ -60,12 +60,13 @@ input[type="submit"] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+/* En utility.css */
 .btn {
   padding: 0.7rem 2.4rem;
   border-radius: 0.2rem;
   font-weight: 600;
   background-color: var(--green);
-  color: #fff;
+  color: var(--dark);
   border: 1px solid var(--green);
 }
 .btn:hover {
@@ -118,4 +119,8 @@ img {
 .shadow:hover {
   -webkit-box-shadow: 0px 0px 18px -4px rgba(109, 109, 109, 0.64);
   box-shadow: 0px 0px 18px -4px rgba(109, 109, 109, 0.64);
+}
+
+body.dark-mode .title-intro .lg-title {
+  color: #5a6d7d;
 }

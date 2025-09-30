@@ -89,12 +89,17 @@
 .nav-item {
   margin: 1.6rem 0;
 }
+
+/* En style.css */
 .nav-link {
-  color: #fff;
+  color: var(--dark);
   font-size: 1.2rem;
   -webkit-transition: var(--trans);
   -o-transition: var(--trans);
   transition: var(--trans);
+}
+#navbar-collapse .nav-link {
+  color: var(--dark);
 }
 .nav-link:hover {
   opacity: 0.8;
@@ -950,10 +955,10 @@ body.dark-mode #blog {
   background-color: var(--dark);
 }
 body.dark-mode .text,
-body.dark-mode .navbar-cng .site-brand,
-body.dark-mode .navbar-cng .nav-link,
-body.dark-mode .navbar-cng,
-body.dark-mode .lg-title,
+/* body.dark-mode .navbar-cng .site-brand, */
+/* body.dark-mode .navbar-cng .nav-link, */
+/* body.dark-mode .navbar-cng, */
+/* body.dark-mode .lg-title, */
 body.dark-mode .test-item-info h3,
 body.dark-mode .test-item-info p,
 body.dark-mode .footer-item p,
@@ -964,7 +969,8 @@ body.dark-mode .contact-item > div span,
 body.dark-mode .contact-item .text,
 body.dark-mode .blog-item-bottom span,
 body.dark-mode .blog-item-bottom a {
-  color: #fff;
+  color: #e0e0e0;
+  /* color: #fff; */
 }
 body.dark-mode .contact-form .form-control {
   border-color: #fff;
@@ -1051,4 +1057,75 @@ body.dark-mode .popular-item .text {
 .whatsapp-float:hover {
   background-color: #20b857;
   color: #fff;
+}
+/* Añade estas reglas al final de style.css para el modo oscuro */
+
+body.dark-mode .posi,
+body.dark-mode .lista-descripcion li i {
+  color: #33c054; /* Un verde más brillante, ratio 5.9:1 */
+}
+
+body.dark-mode .contra {
+  color: #ff5252; /* Un rojo más brillante, ratio 4.54:1 */
+}
+
+body.dark-mode .tabla-inclusion i.fa-check {
+  color: #33c054; /* Verde */
+}
+
+body.dark-mode .tabla-inclusion i.fa-xmark {
+  color: #ff5252; /* Rojo */
+}
+
+/* ============================================= */
+/* === ESTILOS NAVBAR PARA MODO OSCURO (CORRECCIÓN) === */
+/* ============================================= */
+
+/* 2. Color para el logo y los enlaces EN CUALQUIER ESTADO (arriba o con scroll) */
+body.dark-mode .nav-link,
+body.dark-mode .site-brand {
+  color: #e0e0e0; /* Texto de los enlaces y logo en gris claro */
+}
+
+/* 3. Color para el botón del menú móvil */
+body.dark-mode #navbar-show-btn {
+  color: #e0e0e0;
+}
+
+/* ============================================= */
+/* === CORRECCIÓN FINAL NAVBAR MODO OSCURO (JERARQUÍA ID) === */
+/* ============================================= */
+/* body.dark-mode #navbar-collapse .nav-link {
+  color: #e0e0e0;
+} */
+
+@media screen and (min-width: 992px) {
+  body.dark-mode #navbar-collapse .nav-link {
+    color: #e0e0e0;
+  }
+}
+.img-wrap {
+  position: relative;
+  display: inline-block; /* o block / width:100% según necesites */
+  overflow: hidden;
+}
+
+.img-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* sombreado desde abajo */
+.img-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    /* dirección del degradado */ rgba(0, 0, 0, 0.6) 0%,
+    /* negro fuerte abajo */ rgba(0, 0, 0, 0.3) 40%,
+    /* intermedio */ rgba(0, 0, 0, 0) 100% /* transparente arriba */
+  );
+  pointer-events: none;
 }
