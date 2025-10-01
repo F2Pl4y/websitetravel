@@ -29,7 +29,6 @@ document.addEventListener("click", (e) => {
     navbarCollapseDiv.classList.remove("navbar-collapse-rmw");
   }
 });
-
 // stop transition and animatino during window resizing
 let resizeTimer;
 window.addEventListener("resize", () => {
@@ -49,10 +48,6 @@ button.addEventListener("click", () => {
     document.querySelector("body").classList.remove("dark-mode");
   }
 });
-
-
-
-
 // --- Control del Video de la Página de Inicio ---
 const video = document.querySelector('#video .video-wrapper video');
 const playBtn = document.getElementById('play-btn');

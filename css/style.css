@@ -548,7 +548,7 @@ footer .site-brand {
   transition: var(--trans);
 }
 .footer-item a:hover {
-  color: var(--green);
+  color: var(--green) !important;
 }
 .footer-item ul {
   padding: 0;
@@ -818,7 +818,8 @@ header.header-sm {
   -o-transition: var(--trans);
   transition: var(--trans);
 }
-.blog-item-bottom a:hover {
+.blog-item-bottom a:hover,
+button:hover {
   opacity: 0.8;
 }
 
@@ -955,10 +956,10 @@ body.dark-mode #blog {
   background-color: var(--dark);
 }
 body.dark-mode .text,
-/* body.dark-mode .navbar-cng .site-brand, */
-/* body.dark-mode .navbar-cng .nav-link, */
-/* body.dark-mode .navbar-cng, */
-/* body.dark-mode .lg-title, */
+body.dark-mode .navbar-cng .site-brand,
+body.dark-mode .navbar-cng .nav-link,
+body.dark-mode .navbar-cng,
+body.dark-mode .lg-title,
 body.dark-mode .test-item-info h3,
 body.dark-mode .test-item-info p,
 body.dark-mode .footer-item p,
@@ -968,9 +969,9 @@ body.dark-mode .about-right h2,
 body.dark-mode .contact-item > div span,
 body.dark-mode .contact-item .text,
 body.dark-mode .blog-item-bottom span,
-body.dark-mode .blog-item-bottom a {
+/* body.dark-mode .blog-item-bottom a, */
+body.dark-mode .table {
   color: #e0e0e0;
-  /* color: #fff; */
 }
 body.dark-mode .contact-form .form-control {
   border-color: #fff;
@@ -1002,7 +1003,7 @@ body.dark-mode .popular-item .text {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 1rem;
-  color: #212529;
+  /* color: #5a6d7d; */
   background-color: transparent;
 }
 
@@ -1011,13 +1012,13 @@ body.dark-mode .popular-item .text {
 .table td {
   padding: 0.75rem;
   vertical-align: middle;
-  border: 1px solid #dee2e6;
+  /* border: 1px solid #dee2e6; */
 }
 
 /* Encabezado */
 .table thead th {
   font-weight: bold;
-  background-color: #f8f9fa;
+  background-color: transparent;
 }
 
 /* Estilo rayado (striped) */
@@ -1128,4 +1129,26 @@ body.dark-mode #navbar-show-btn {
     /* intermedio */ rgba(0, 0, 0, 0) 100% /* transparente arriba */
   );
   pointer-events: none;
+}
+
+/* ================================================= */
+/* === ALINEACIÓN DE BOTONES EN TARJETAS (V2 - CORREGIDO) === */
+/* ================================================= */
+
+/* 1. Hacemos que TODA la tarjeta sea un contenedor flexible */
+.blog-item {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 2. Hacemos que la sección de contenido (la parte de abajo) crezca y llene el espacio sobrante */
+.blog-item-bottom {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* La sección de contenido se expande para ocupar el espacio que la imagen no usa */
+}
+
+/* 3. Hacemos que el párrafo crezca DENTRO de la sección de contenido */
+.blog-item-bottom .text {
+  flex-grow: 1; /* El párrafo empuja el botón hacia el fondo de la sección de contenido */
 }

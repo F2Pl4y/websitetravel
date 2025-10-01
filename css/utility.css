@@ -121,6 +121,11 @@ img {
   box-shadow: 0px 0px 18px -4px rgba(109, 109, 109, 0.64);
 }
 
-body.dark-mode .title-intro .lg-title {
+body.dark-mode .title-intro .lg-title,
+body.dark-mode .title-intro {
   color: #5a6d7d;
+}
+
+.text-center {
+  text-align: center;
 }
