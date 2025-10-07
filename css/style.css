@@ -1152,3 +1152,30 @@ body.dark-mode #navbar-show-btn {
 .blog-item-bottom .text {
   flex-grow: 1; /* El párrafo empuja el botón hacia el fondo de la sección de contenido */
 }
+
+/* =============================================
+   SOLUCIÓN PARA GALERÍA DE IMÁGENES UNIFORMES
+   ============================================= */
+
+/* 1. Forzamos una proporción y altura a cada item de la galería */
+.gallery-item {
+  aspect-ratio: 4 / 3; /* Proporción 4:3 (puedes cambiar a 1 / 1 para cuadrados) */
+  overflow: hidden; /* Esto ya lo tenías, pero es crucial */
+  position: relative;
+  display: flex; /* Centra la imagen si es más pequeña (aunque no pasará con object-fit) */
+  align-items: center;
+  justify-content: center;
+}
+
+/* 2. Hacemos que la imagen llene el contenedor sin deformarse */
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* La propiedad clave: recorta en lugar de estirar */
+  transition: transform 0.3s ease; /* Transición suave para el zoom */
+}
+
+/* 3. Mantenemos el efecto de zoom que ya tenías */
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
