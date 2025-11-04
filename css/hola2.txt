@@ -1,0 +1,37 @@
+Instrucción de Renderizado: Generar una fotografía de producto de alta gama, con calidad editorial, nitidez extrema y resolución excepcional. El formato debe ser estrictamente 1:1 (cuadrado). La imagen debe presentar la montura 'VOLSKY' (con la forma de la Imagen 2, y el color de destino de la Imagen 2) como el único y absoluto protagonista.
+
+Utilizando este prompt con tus imágenes de referencia:
+
+Tu tarea es generar una fotografía de producto de alta gama, calidad editorial, nitidez extrema y resolución excepcional, en formato estrictamente 1:1 (cuadrado).
+
+Objetivo Principal: Crear una imagen de la montura 'VOLSKY' modelo 'VOLS-030 C8 negro (que tiene una forma Navegador o Navigator' con doble puente), integrando su diseño, color y acabado exactos de la Imagen 2, dentro del ambiente, iluminación y composición de la Imagen 1.
+
+Referencias Adjuntas:
+
+Referencia de Ambiente y Composición (Imagen 1): Esta imagen define el estilo fotográfico, la iluminación profesional, el ángulo de la toma, la superficie y el ambiente minimalista. La nueva montura debe ser posicionada y presentada con la misma estética visual de lujo y estrategia de espacio negativo.
+
+Referencia de Diseño y Color (Imagen 2 - Catálogo VOLS-030): Esta imagen es la fuente primaria para el diseño estructural, la forma específica, el tamaño (proporcional al ambiente de la Imagen 1), el color exacto (negro) y el acabado de la montura 'VOLS-030 C8'.
+
+Instrucciones de Renderizado Detalladas:
+
+Forma y Diseño de la Montura: La montura en la imagen final debe replicar fielmente la forma y el diseño estructural exacto de la montura 'VOLS-030 C8' del catálogo (Imagen 2). No debe mantener la forma de la montura de la Imagen 1.
+
+Color y Acabado: Aplica el color negro y el acabado material exacto de la montura 'VOLS-030 C8' de la Imagen 2.
+
+Posición y Orientación: La montura debe presentarse en una pose y ángulo similar a la montura de la Imagen 1, pero aplicando la forma del modelo C8.
+
+Ambiente, Iluminación y Composición: El fondo, la superficie, la iluminación, las sombras y la composición general deben ser idénticos a los de la Imagen 1. Mantén su minimalismo, las líneas y la estrategia de espacio negativo.
+
+Calidad de Imagen: La fotografía debe ser fotorrealista, con máxima nitidez en cada detalle, reflejos sutiles que evidencien la calidad del material y una iluminación de producto profesional que resalte contornos y texturas.
+
+Protagonismo: La montura 'VOLSKY' re-diseñada y re-coloreada es el único y absoluto protagonista.
+
+Formato: Estrictamente 1:1 (cuadrado).
+
+Restricciones Absolutas:
+
+Sin Texto ni Logos: La imagen generada debe ser puramente visual.
+
+Sin Elementos Humanos: No debe aparecer ninguna parte del cuerpo humano.
+
+Sentimiento a Evocar: Diseño superior, artesanía de calidad, lujo tangible, objeto de deseo, atención al detalle, elegancia y modernidad en el diseño.

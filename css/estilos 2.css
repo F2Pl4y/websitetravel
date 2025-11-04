@@ -255,3 +255,8 @@ header.tour-header {
   width: 170px;
   max-height: 100px;
 }
+
+.txt-jstf {
+  text-align: justify;
+  /* display: block; */
+}
