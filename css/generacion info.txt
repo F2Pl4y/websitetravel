@@ -1,0 +1,43 @@
+Genera una imagen en formato vertical (relación de aspecto 3:4).
+
+FONDO Y ATMÓSFERA: El fondo debe ser un degradado de color suave y atmosférico, con tonos que evoquen calma y modernidad (ej. azul pastel a melocotón rosado, o lavanda a beige cálido). El diseño general debe ser elegante, contemporáneo y visualmente atractivo, con una estética de "lujo moderno" o "estilo boutique".
+
+TÍTULO: La imagen debe tener un título principal en la parte superior: "DIMENSIONES".
+
+IDIOMA: Todo el texto en la imagen debe estar en ESPAÑOL.
+
+ESTILO VISUAL DE LAS MONTURAS: La forma del armazón debe ser un diseño genérico de montura estilo 'cat-eye' (agatada), femenina y elegante. Las monturas deben ser un contorno negro sólido sobre el fondo degradado (sin interior de color). No añadir texturas ni detalles de color.
+
+La imagen debe mostrar tres diagramas de las monturas organizados verticalmente, cada uno con un texto de título y el valor numérico, y con líneas guía exactamente como se describen a continuación (copiando el estilo de la imagen de referencia adjunta):
+
+Diagrama 1 (Ancho de la luna):
+
+Imagen: Una vista frontal de la montura 'cat-eye'.
+
+Líneas Guía: Colocar líneas guía horizontales que se extiendan desde el borde exterior de un solo lente hasta el borde interior de ese mismo lente (junto al puente). Estas líneas deben tener flechas o topes al final, como en el ejemplo de diagrama de medidas.
+
+Texto: ANCHO DE LA LUNA [53] mm
+
+Diagrama 2 (Ancho de la nariz):
+
+Imagen: Una vista frontal de la montura 'cat-eye'.
+
+Líneas Guía: Colocar líneas guía horizontales y cortas que delimiten ÚNICAMENTE el espacio del puente nasal entre los dos lentes. Deben tener flechas o topes al final, como en el ejemplo.
+
+Texto: ANCHO DE LA NARIZ [17] mm
+
+Diagrama 3 (Largo de las patillas):
+
+Imagen: Una vista de perfil (lateral) de la montura 'cat-eye'.
+
+Líneas Guía: Colocar líneas guía horizontales que midan la longitud total de la patilla, desde la bisagra donde se une al frente hasta la punta final. Las líneas deben tener flechas o topes, y no deben tocar ni extenderse a la parte del lente.
+
+Texto: LARGO DE LAS PATILLAS [140] mm
+
+Instrucciones de Diseño:
+
+Usa una tipografía sans-serif moderna, elegante y de peso ligero para todos los textos, que contraste bien con el fondo degradado.
+
+Asegúrate de que los tres diagramas y sus textos estén bien espaciados y alineados verticalmente, creando una guía limpia y profesional.
+
+La composición debe ser estéticamente agradable y fácil de leer.
