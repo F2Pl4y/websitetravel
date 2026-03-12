@@ -374,11 +374,14 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
+  width: auto;
   z-index: 2;
   color: #fff;
-  width: 100%;
   padding: 1rem;
   box-sizing: border-box;
+  word-wrap: break-word;
+  pointer-events: none;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);

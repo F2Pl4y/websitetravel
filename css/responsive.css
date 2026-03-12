@@ -18,9 +18,9 @@
 }
 @media screen and (max-width: 460px) {
   .featured-item-content {
-    -webkit-transform: translateY(68%);
-    -ms-transform: translateY(68%);
-    transform: translateY(68%);
+    -webkit-transform: translateY(8%);
+    -ms-transform: translateY(8%);
+    transform: translateY(8%);
   }
 }
 
