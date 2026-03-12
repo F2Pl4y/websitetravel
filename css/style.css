@@ -109,7 +109,8 @@
 header {
   min-height: 100vh;
   padding-top: 7rem;
-  background: -webkit-gradient(
+  background:
+    -webkit-gradient(
       linear,
       left top,
       left bottom,
@@ -117,9 +118,11 @@ header {
       to(rgba(0, 0, 0, 0.4))
     ),
     url(../images/header-bg.jpg) center/cover no-repeat;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background:
+    -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../images/header-bg.jpg) center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../images/header-bg.jpg) center/cover no-repeat;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -361,6 +364,7 @@ header {
   color: #fff;
   width: 100%;
   padding: 1rem;
+  box-sizing: border-box;
   -webkit-transform: translateY(68%);
   -ms-transform: translateY(68%);
   transform: translateY(68%);
@@ -406,7 +410,8 @@ header {
 }
 /* services */
 #services {
-  background: -webkit-gradient(
+  background:
+    -webkit-gradient(
       linear,
       left top,
       left bottom,
@@ -414,9 +419,11 @@ header {
       to(rgba(0, 0, 0, 0.5))
     ),
     url(../images/services-bg.jpg) center/cover no-repeat;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background:
+    -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/services-bg.jpg) center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/services-bg.jpg) center/cover no-repeat;
 }
 #services * {
@@ -743,6 +750,7 @@ header.header-sm {
   width: 100%;
   /* padding: 2rem; */
   padding: 1rem 1.2rem;
+  box-sizing: border-box;
   -webkit-transition: var(--trans);
   -o-transition: var(--trans);
   transition: var(--trans);
@@ -834,7 +842,8 @@ button:hover {
 
 /* facts */
 #facts {
-  background: -webkit-gradient(
+  background:
+    -webkit-gradient(
       linear,
       left top,
       left bottom,
@@ -842,9 +851,11 @@ button:hover {
       to(rgba(0, 0, 0, 0.5))
     ),
     url(../images/facts-img.jpg) center/cover no-repeat;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background:
+    -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/facts-img.jpg) center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/facts-img.jpg) center/cover no-repeat;
   min-height: 80vh;
 }
