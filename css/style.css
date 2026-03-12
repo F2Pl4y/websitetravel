@@ -371,7 +371,6 @@ header {
   -webkit-transition: var(--trans);
   -o-transition: var(--trans);
   transition: var(--trans); */
-
   position: absolute;
   bottom: 0;
   left: 0;
@@ -404,6 +403,7 @@ header {
   -ms-transform: translateY(0);
   transform: translateY(0);
 } */
+
 /* miagregado */
 .featured-item a {
   position: relative;
